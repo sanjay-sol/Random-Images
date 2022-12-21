@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import axios from 'axios';
 import Images from './Images';
 
-const apiKey = "636e1481b4f3c446d26b8eb6ebfe7127";
+const apiKey = process.env.REACT_APP_API_KEY;
 const App = () => {
   const [data,setData] = useState([]);
   const [search,setSearch] = useState("");
